@@ -16,7 +16,7 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from citasmd.views import  agregar_citasmd, ver_citasmd, editar_citasmd, eliminar_citasmd
+from citasmd.views import  agregar_citasmd, ver_citasmd, editar_citasmd, eliminar_citasmd, generar_reporte
 from webapp.views import  mostrar_citasmd
 
 urlpatterns = [
@@ -26,4 +26,5 @@ urlpatterns = [
     path('ver_citasmd/<int:idCitasMd>', ver_citasmd),
     path('editar_citasmd/<int:idCitasMd>', editar_citasmd),
     path('eliminar_citasmd/<int:idCitasMd>', eliminar_citasmd),
+    path('generar_reporte/', generar_reporte),
 ]
