@@ -6,3 +6,4 @@ from .models import CitasMd, Doctor, Paciente
 admin.site.register(CitasMd)
 admin.site.register(Doctor)
 admin.site.register(Paciente)
+
